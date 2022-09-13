@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .header__logo {
+      height: 48px;
+      margin-right: 0.5em;
+  }
+  .header__title {
+      margin-left: 0;
+      font-size: 2em;
+      vertical-align: bottom;
+  }
+}
+
+@media screen and (min-width: 700 px) {
+  .hero {
+      order: 0;
+      width: 60%;
+  }
+  .weather {
+      order: 1;
+      width: 40%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main,
+  .header__inner,
+  .nav,
+  .content {
+      width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
