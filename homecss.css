@@ -4,12 +4,6 @@
 
 @media screen and (min-width: 900 px) {}
 
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     font-family: Roboto;
     font-size: 12px;
@@ -40,55 +34,6 @@ nav {
 
 }
 
-.side {
-    display: block;
-    position: absolute;
-    height: 100%;
-    overflow: visible;
-}
-
-.side img {
-    display: flex;
-    margin-left: -100%;
-    width: 600px;
-}
-
-.spic {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.side:hover .image {
-    opacity: 0.3;
-}
-
-.side:hover .middle {
-    opacity: 1;
-}
-
-.text {
-    background-color: #cbe9a2;
-    color: white;
-    font-size: 16px;
-    margin-left: -150%;
-    width: 400px;
-}
-
 .content {
     position: absolute;
     top: 40%;
@@ -107,8 +52,7 @@ nav {
 
 .header_title {
     font-size: 1.55em;
-    margin: 0.5em 0.25em;
-    margin-right: 0.25em;
+    margin: 5px;
     color: #495159;
     letter-spacing: -0.05em;
     text-transform: uppercase;
@@ -171,6 +115,7 @@ nav li a:hover {
     width: 20px;
     text-align: center;
     height: 16px;
+    padding-right: 5px;
 }
 
 .bgtext {
