@@ -131,3 +131,28 @@ nav li a:hover {
 .secondCard {
     background-color: #F6B444;
 }
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+
+.reveal.active {
+    opacity: 1;
+  }
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+@keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
