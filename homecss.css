@@ -145,6 +145,22 @@ nav li a:hover {
     animation: fade-right 1s ease-in;
   }
 
+.active.fade-bottom {
+    animation: fade-bottom 5s ease-in; 
+    /* PROBABLY CHANGE THIS LATER SINCE THIS IS CURRENTLY USED WITH PLACEHOLDER */
+  }
+
+@keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 @keyframes fade-right {
     0% {
       transform: translateX(100px);
@@ -156,3 +172,21 @@ nav li a:hover {
     }
   }
 
+.side {
+    display: block;
+    position: absolute;
+}
+
+.side img {
+    display: flex;
+    margin-left: -65%;
+    margin-top: -25%;
+    width: 1280px;
+}
+
+.spic {
+    opacity: 1;
+    display: block;
+    width: 100%;
+
+}
