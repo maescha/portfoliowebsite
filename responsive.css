@@ -10,7 +10,7 @@
 @media screen and (max-width: 550px) {
   .header__logo {
       height: 48px;
-      margin-right: 0.5em;
+      /* margin-right: 0.5em; */
   }
   .header__title {
       margin-left: 0;
@@ -31,9 +31,8 @@
 }
 
 @media screen and (min-width: 900px) {
-  main,
+  .topCard,
   .header__inner,
-  .nav,
   .content {
       width: 850px;
       margin-left: auto;

@@ -12,7 +12,11 @@ function reveal() {
     }
   }
 
-  window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);
 
-// To check the scroll position on page load
-reveal();
+//navBar animations
+const navMenu = document.querySelector(".navBar");
+
+window.addEventListener("scroll", () => {
+  navMenu.classList.add("animate__animated", "animate__slideInDown", "animate__slow");
+});

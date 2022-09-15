@@ -1,8 +1,8 @@
-@media screen and (min-width: 550 px) {}
+/* @media screen and (min-width: 550 px) {}
 
 @media screen and (min-width: 700 px) {}
 
-@media screen and (min-width: 900 px) {}
+@media screen and (min-width: 900 px) {} */
 
 body {
     font-family: Roboto;
@@ -63,6 +63,9 @@ main span {
 nav {
     width: 100%;
     overflow: auto;
+    top: 0;
+    left: 0;
+
 }
 
 .verticalline {
@@ -128,6 +131,32 @@ nav li a:hover {
     margin-left: 40%;
 }
 
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+
+}
+
+.navBar li {
+    float: left;
+}
+
+.navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar li a:hover {
+    background-color: #111;
+  }
+
 .secondCard {
     background-color: #F6B444;
 }
@@ -182,11 +211,5 @@ nav li a:hover {
     margin-left: -65%;
     margin-top: -25%;
     width: 1280px;
-}
-
-.spic {
-    opacity: 1;
-    display: block;
-    width: 100%;
-
+    z-index: -1;
 }
