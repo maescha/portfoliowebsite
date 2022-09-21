@@ -14,12 +14,19 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-//sideBox animations
+//sideBox and secondCard animations
 const sideMenu = document.querySelector(".sideBox");
+const aboutMe = document.querySelector(".secondCard");
 
 window.addEventListener("scroll", () => {
   sideMenu.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
+
+  setTimeout(() => {
+    aboutMe.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
+  }, "1000")
+
 });
+
 
 //sideBox middleColumn Textwriting animations
 // code from https://css-tricks.com/snippets/css/typewriter-effect/
