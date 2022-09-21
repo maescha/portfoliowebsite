@@ -207,6 +207,11 @@ nav li a:hover {
 .secondCard {
     background-color: #F6B444;
     display: inline-grid;
+    width: 85%;
+    margin-left: 3.5em;
+    top: -530px;
+    left: 120px;
+    z-index: 5;
 }
 
 .reveal {
