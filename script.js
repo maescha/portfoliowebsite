@@ -14,9 +14,9 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-//navBar animations
-const navMenu = document.querySelector(".navBar");
+//sideBox animations
+const sideMenu = document.querySelector(".sideBox");
 
 window.addEventListener("scroll", () => {
-  navMenu.classList.add("animate__animated", "animate__slideInDown", "animate__slow");
+  sideMenu.classList.add("animate__animated", "animate__slideInDown", "animate__slow");
 });

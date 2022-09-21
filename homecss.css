@@ -132,21 +132,19 @@ nav li a:hover {
     margin-left: 40%;
 }
 
-.navBar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.sideBox ul {
+    list-style: none;
     overflow: hidden;
-    background-color: #333;
-    width: 100%;
+    background-color: #e35b5f;
     text-transform: uppercase;
 }
 
-.navBar li {
+.sideBox li {
     float: left;
+    color: white;
 }
 
-.navBar li a {
+.sideBox li a {
     display: block;
     color: white;
     text-align: center;
@@ -154,7 +152,7 @@ nav li a:hover {
     text-decoration: none;
 }
 
-.navBar li a:hover {
+.sideBox li a:hover {
     background-color: #111;
   }
 
