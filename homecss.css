@@ -132,11 +132,16 @@ nav li a:hover {
     margin-left: 40%;
 }
 
+.sideBox {
+    display: grid;
+    grid-template-columns: 450px;
+}
 .sideBox ul {
     list-style: none;
     overflow: hidden;
     background-color: #e35b5f;
     text-transform: uppercase;
+    display: block;
 }
 
 .sideBox li {
@@ -144,17 +149,9 @@ nav li a:hover {
     color: white;
 }
 
-.sideBox li a {
+.bottomSideBox {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
-
-.sideBox li a:hover {
-    background-color: #111;
-  }
 
 .secondCard {
     background-color: #F6B444;
