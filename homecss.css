@@ -16,7 +16,6 @@ body {
     background-color: black;
     position: absolute;
     z-index: -1;
-
 }
 
 .content {
@@ -27,7 +26,6 @@ body {
     z-index: 1;
     left: 20%;
     opacity: 0.86;
-
 }
 
 .headertext {
@@ -136,6 +134,7 @@ nav li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 5%;
+    position: relative;
 }
 
 .sideWindow {
@@ -152,8 +151,9 @@ nav li a:hover {
     border: 1px solid #d49d9a;
 }
 
-.insideSideBox img {
-    object-fit: cover;
+#whiteImg {
+    width: 50px;
+    height: 550px;
 }
 
 .leftSideMockButtons {
@@ -188,9 +188,25 @@ nav li a:hover {
     border: 1px solid #d49d9a;
 }
 
+#starImg {
+    display: block;
+    margin-left: -100%;
+    margin-top: 3%;
+}
+
+.midColumnText {
+    display: inline;
+    text-transform: uppercase;
+    margin-left: -180%;
+    margin-top: 15%;
+    font-family: "Special Elite";
+    font-size: 36px;
+}
+
 
 .secondCard {
     background-color: #F6B444;
+    display: inline-grid;
 }
 
 .reveal {
@@ -202,15 +218,4 @@ nav li a:hover {
     opacity: 1;
   }
 
-.side {
-    display: block;
-    position: absolute;
-}
 
-.side img {
-    display: flex;
-    margin-left: -65%;
-    margin-top: -25%;
-    width: 1280px;
-    z-index: -1;
-}
