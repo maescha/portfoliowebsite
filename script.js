@@ -18,5 +18,5 @@ window.addEventListener("scroll", reveal);
 const sideMenu = document.querySelector(".sideBox");
 
 window.addEventListener("scroll", () => {
-  sideMenu.classList.add("animate__animated", "animate__slideInDown", "animate__slow");
+  sideMenu.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
 });
