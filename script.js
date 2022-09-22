@@ -1,3 +1,4 @@
+//reveal function taken from https://alvarotrigo.com/blog/css-animations-scroll/
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -105,3 +106,12 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+//footer animation
+const footerMenu = document.querySelector(".footerArea");
+footerMenu.style.display = "none";
+
+window.addEventListener("scroll", () => {
+  footerMenu.style.display = "grid";
+  footerMenu.classList.add("animate__animated", "animate__backInUp");
+});

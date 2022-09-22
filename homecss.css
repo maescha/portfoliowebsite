@@ -228,7 +228,7 @@ nav li a:hover {
 
 .bioCaption {
     display: block;
-    margin-top: -1000px;
+    margin-top: -1050px;
     margin-left: 750px;
     text-align: right;
     width: 644px; /* this needs to be changed to whatever width the actual image used is*/
@@ -238,6 +238,15 @@ nav li a:hover {
     background-color: #ffecc9;
     display: inline-grid;
     margin-left: 750px;
+    width: 644px; /* this needs to be changed to whatever width the actual image used is*/
 }
 
+.footerArea {
+    background-color: black;
+}
 
+.textContainer {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    width: 100%;
+}
