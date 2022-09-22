@@ -10,6 +10,15 @@ body {
     margin: 0px;
 }
 
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
 .topcard div {
     height: 100%;
     width: 100%;
@@ -205,7 +214,6 @@ nav li a:hover {
 
 .secondCard {
     background-color: white;
-    display: inline-grid;
     width: 650px;
     top: -500px;
     left: 250px;
@@ -218,13 +226,18 @@ nav li a:hover {
     padding: 15px;
 }
 
-.reveal {
-    position: relative;
-    opacity: 0;
-  }
+.biocaption {
+    display: block;
+    margin-top: -1000px;
+    margin-left: 750px;
+    text-align: right;
+    width: 644px; /* this needs to be changed to whatever width the actual image used is*/
+}
 
-.reveal.active {
-    opacity: 1;
-  }
+.thirdCard {
+    background-color: #ffecc9;
+    display: inline-grid;
+    margin-left: 750px;
+}
 
 
