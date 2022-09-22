@@ -17,19 +17,35 @@ window.addEventListener("scroll", reveal);
 //sideBox and secondCard animations
 const sideMenu = document.querySelector(".sideBox");
 const aboutMe = document.querySelector(".secondCard");
+const caption = document.querySelector(".bioCaption");
+const bioImg = document.querySelector(".thirdCard")
 
 aboutMe.style.display = "none";
+caption.style.display = "none";
+bioImg.style.display = "none";
+
+//will allow windows to load in one after another
+const delayedAnimation = (className, delay, shouldDisplayBlock) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const elem = document.querySelector(className);
+
+      if (shouldDisplayBlock) {
+        elem.style.display = "block";
+      }
+
+      elem.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
+      resolve();
+    }, delay);
+  });
+};
 
 window.addEventListener("scroll", () => {
-  sideMenu.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
-
-  setTimeout(() => {
-    aboutMe.style.display = "block";
-    aboutMe.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
-  }, "1000")
-
+  delayedAnimation(".sideBox", 0, false)
+  .then(() => delayedAnimation(".secondCard", 1000, true))
+  .then(() => delayedAnimation(".bioCaption", 1000, true))
+  .then(() => delayedAnimation(".thirdCard", 1000, true));
 });
-
 
 //sideBox middleColumn Textwriting animations
 // code from https://css-tricks.com/snippets/css/typewriter-effect/
