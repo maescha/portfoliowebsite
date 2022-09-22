@@ -18,10 +18,13 @@ window.addEventListener("scroll", reveal);
 const sideMenu = document.querySelector(".sideBox");
 const aboutMe = document.querySelector(".secondCard");
 
+aboutMe.style.display = "none";
+
 window.addEventListener("scroll", () => {
   sideMenu.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
 
   setTimeout(() => {
+    aboutMe.style.display = "block";
     aboutMe.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
   }, "1000")
 

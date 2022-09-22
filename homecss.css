@@ -203,15 +203,15 @@ nav li a:hover {
     font-size: 36px;
 }
 
-
 .secondCard {
     background-color: #F6B444;
     display: inline-grid;
-    width: 85%;
-    margin-left: 3.5em;
-    top: -530px;
-    left: 120px;
+    width: 650px;
+    top: -500px;
+    left: 250px;
     z-index: 5;
+    border: 1px solid #d49d9a;
+
 }
 
 .reveal {
