@@ -204,14 +204,18 @@ nav li a:hover {
 }
 
 .secondCard {
-    background-color: #F6B444;
+    background-color: white;
     display: inline-grid;
     width: 650px;
     top: -500px;
     left: 250px;
     z-index: 5;
-    border: 1px solid #d49d9a;
+    border: 1px solid #e35b5f;
+}
 
+.secondText {
+    border: 1px solid #e35b5f;
+    padding: 15px;
 }
 
 .reveal {
