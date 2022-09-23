@@ -234,11 +234,17 @@ nav li a:hover {
     width: 644px; /* this needs to be changed to whatever width the actual image used is*/
 }
 
+.bioImage img{
+  width: 700px; /* this needs to be changed to whatever width the actual image used is*/
+  height: 640px; /* this needs to be changed to whatever HEIGHT the actual image used is*/
+
+  /* ABOVE HEIGHT AND WEIGHT WILL INFLUENCE WHETHER OR NOT THE PAGE WILL OVERFLOW VERTICALLY OR HORIZONTALLY */
+
+}
+
 .thirdCard {
     background-color: #ffecc9;
-    display: inline-grid;
     margin-left: 750px;
-    width: 644px; /* this needs to be changed to whatever width the actual image used is*/
 }
 
 .footerArea {
@@ -248,5 +254,6 @@ nav li a:hover {
 .textContainer {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
-    width: 100%;
+    padding-left: 25px;
+    overflow-wrap: break-word;
 }

@@ -19,11 +19,13 @@ window.addEventListener("scroll", reveal);
 const sideMenu = document.querySelector(".sideBox");
 const aboutMe = document.querySelector(".secondCard");
 const caption = document.querySelector(".bioCaption");
-const bioImg = document.querySelector(".thirdCard")
+const bioImg = document.querySelector(".thirdCard");
+const footerArea = document.querySelector(".footerArea");
 
 aboutMe.style.display = "none";
 caption.style.display = "none";
 bioImg.style.display = "none";
+footerArea.style.display = "none";
 
 //will allow windows to load in one after another
 const delayedAnimation = (className, delay, shouldDisplayBlock) => {
@@ -45,7 +47,8 @@ window.addEventListener("scroll", () => {
   delayedAnimation(".sideBox", 0, false)
   .then(() => delayedAnimation(".secondCard", 1000, true))
   .then(() => delayedAnimation(".bioCaption", 1000, true))
-  .then(() => delayedAnimation(".thirdCard", 1000, true));
+  .then(() => delayedAnimation(".thirdCard", 1000, true))
+  .then(() => delayedAnimation(".footerArea", 1000, true));
 });
 
 //sideBox middleColumn Textwriting animations
@@ -107,11 +110,3 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-//footer animation
-const footerMenu = document.querySelector(".footerArea");
-footerMenu.style.display = "none";
-
-window.addEventListener("scroll", () => {
-  footerMenu.style.display = "grid";
-  footerMenu.classList.add("animate__animated", "animate__backInUp");
-});
