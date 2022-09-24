@@ -32,13 +32,11 @@ const sideMenu = document.querySelector(".sideBox");
 const aboutMe = document.querySelector(".secondCard");
 const caption = document.querySelector(".bioCaption");
 const bioImg = document.querySelector(".thirdCard");
-const footerArea = document.querySelector(".footerArea");
 
 //hiding modal contents on page load
 aboutMe.style.display = "none";
 caption.style.display = "none";
 bioImg.style.display = "none";
-footerArea.style.display = "none";
 
 //will allow modal windows to load in one after another
 const delayedAnimation = (className, delay, shouldDisplayBlock) => {
@@ -59,8 +57,7 @@ const delayedAnimation = (className, delay, shouldDisplayBlock) => {
 delayedAnimation(".sideBox", 0, false)
 .then(() => delayedAnimation(".secondCard", 1000, true))
 .then(() => delayedAnimation(".bioCaption", 1000, true))
-.then(() => delayedAnimation(".thirdCard", 1000, true))
-.then(() => delayedAnimation(".footerArea", 1000, true));
+.then(() => delayedAnimation(".thirdCard", 1000, true));
 
 //sideBox middleColumn Textwriting animations
 // code from https://css-tricks.com/snippets/css/typewriter-effect/

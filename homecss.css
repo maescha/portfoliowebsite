@@ -152,6 +152,19 @@ nav li a:hover {
   width: 100%;
 }
 
+.closeModal {
+  color: #b3e181;
+  float: left;
+  font-size: 30px;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: #6f8c50;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .sideBox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
