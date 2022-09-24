@@ -139,6 +139,19 @@ nav li a:hover {
     margin-left: 40%;
 }
 
+/* .midPage {
+
+} */
+
+#circle {
+  color: #ddd5c0;
+  font-size: 350px;
+  position: absolute;
+  margin-top: -540px;
+  margin-left: -100px;
+  opacity: 0.2;
+}
+
 .sideBox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -147,17 +160,17 @@ nav li a:hover {
 }
 
 .sideWindow {
-    border: 1px solid #d49d9a;
+    border: 1px solid #a8b5d7;
 }
 
 .mockButtons {
-    background-color: #e35b5f;
+    background-color: #a8bad7;
     display: block;
-    border: 1px solid #d49d9a;
+    border: 1px solid #a8b5d7;
 }
 
 .insideSideBox {
-    border: 1px solid #d49d9a;
+    border: 1px solid #a8b5d7;
 }
 
 #whiteImg {
@@ -176,13 +189,13 @@ nav li a:hover {
 
 .bottomSideBox {
     display: inline;
-    color: #e35b5f;
-    border-top: 1px solid #d49d9a;
+    color: #a8bad7;
+    border-top: 1px solid #a8bad7;
 }
 
 #leftArrow {
     float: left;
-    border: 1px solid #d49d9a;
+    border: 1px solid #a8b5d7;
 }
 
 #scrollBar {
@@ -194,7 +207,7 @@ nav li a:hover {
 
 #rightArrow {
     float: right;
-    border: 1px solid #d49d9a;
+    border: 1px solid #a8b5d7;
 }
 
 #starImg {
@@ -218,11 +231,11 @@ nav li a:hover {
     top: -500px;
     left: 250px;
     z-index: 5;
-    border: 1px solid #e35b5f;
+    border: 1px solid #a8b5d7;
 }
 
 .secondText {
-    border: 1px solid #e35b5f;
+    border: 1px solid #a8b5d7;
     padding: 15px;
 }
 
@@ -243,7 +256,7 @@ nav li a:hover {
 }
 
 .thirdCard {
-    background-color: #ffecc9;
+    background-color: #ccd5cc;
     margin-left: 750px;
 }
 
