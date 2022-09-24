@@ -117,6 +117,7 @@ nav li a:hover {
     background-repeat: repeat;
     background-clip: border-box;
     background-origin: border-box;
+    position: fixed;
 
 }
 
@@ -160,7 +161,6 @@ button {
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
   z-index: 100;
 
 }
@@ -180,6 +180,11 @@ button {
   color: #6f8c50;
   text-decoration: none;
   cursor: pointer;
+}
+
+.aboutme {
+  width:596px;
+  height:896px;
 }
 
 .sideBox {
@@ -289,17 +294,28 @@ button {
 }
 
 .thirdCard {
-    background-color: #ccd5cc;
-    margin-left: 650px;
+  background-color: #ccd5cc;
+  margin-left: 650px;
+}
+
+footer {
+  font-family: Roboto;
+  font-size: 10px;
+  line-height: 1px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color:#384559
 }
 
 .footerArea {
-    background-color: black;
+    background-color: #dbd3be;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .textContainer {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
-    padding-left: 25px;
-    overflow-wrap: break-word;
-}
+    padding-left: 55px;
+    overflow-wrap: break-word;}
