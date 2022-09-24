@@ -10,6 +10,11 @@ body {
     margin: 0px;
 }
 
+.topcard {
+  position: relative;
+  z-index: -1;
+}
+
 .topcard div {
     height: 100%;
     width: 100%;
@@ -25,6 +30,8 @@ body {
     z-index: 1;
     left: 20%;
     opacity: 0.86;
+    z-index: 1;
+
 }
 
 .headertext {
@@ -137,6 +144,7 @@ nav li a:hover {
   top: 0;
   height: 100%;
   width: 100%;
+  z-index: 100;
 
 }
 

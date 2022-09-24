@@ -8,26 +8,17 @@ const topNavMenu = document.querySelector('.topCard');
 // open modal
 function openModal() {
   modal.style.display = 'initial';
-
-  topNavMenu.classList.add("animate__animated", "animate__lightSpeedOutLeft", "animate__slow");
-  topNavMenu.style.visibility = 'hidden';
 }
 
 // close modal
 function closeModal() {
   modal.style.display = 'none';
-
-  topNavMenu.classList.remove("animate__animated", "animate__lightSpeedOutLeft", "animate__slow");
-  topNavMenu.style.visibility = 'visible';
 }
 
 // Close If Outside Click
 function outsideClick(window) {
   if (window.target == modal) {
     modal.style.display = 'none';
-
-    topNavMenu.classList.remove("animate__animated", "animate__lightSpeedOutLeft", "animate__slow");
-    topNavMenu.style.visibility = 'visible';
   }
 }
 
