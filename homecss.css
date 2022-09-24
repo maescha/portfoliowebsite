@@ -277,12 +277,20 @@ button {
     z-index: 1;
 }
 
-.bioCaption {
+.space {
     display: block;
-    margin-top: -750px;
+    margin-top: -690px;
     margin-left: 550px;
     text-align: right;
     width: 644px; /* this needs to be changed to whatever width the actual image used is*/
+}
+
+.caption {
+  left: 1200px;
+  width: 100%;
+  bottom: 35px;
+  position: fixed;
+  font-size: 50px;
 }
 
 .bioImage img{
@@ -295,7 +303,7 @@ button {
 
 .thirdCard {
   background-color: #ccd5cc;
-  margin-left: 650px;
+  margin-left: 750px;
 }
 
 footer {

@@ -30,7 +30,7 @@ window.addEventListener('click', outsideClick);
 
 const sideMenu = document.querySelector(".sideBox");
 const aboutMe = document.querySelector(".secondCard");
-const caption = document.querySelector(".bioCaption");
+const caption = document.querySelector(".space");
 const bioImg = document.querySelector(".thirdCard");
 
 //hiding modal contents on page load
@@ -56,7 +56,7 @@ const delayedAnimation = (className, delay, shouldDisplayBlock) => {
 
 delayedAnimation(".sideBox", 0, false)
 .then(() => delayedAnimation(".secondCard", 1000, true))
-.then(() => delayedAnimation(".bioCaption", 1000, true))
+.then(() => delayedAnimation(".space", 1000, true))
 .then(() => delayedAnimation(".thirdCard", 1000, true));
 
 //sideBox middleColumn Textwriting animations
