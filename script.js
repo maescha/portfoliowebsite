@@ -3,21 +3,31 @@
 const modal = document.querySelector('#aboutme');
 const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.closeModal');
+const topNavMenu = document.querySelector('.topCard');
 
 // open modal
 function openModal() {
   modal.style.display = 'initial';
+
+  topNavMenu.classList.add("animate__animated", "animate__lightSpeedOutLeft", "animate__slow");
+  topNavMenu.style.visibility = 'hidden';
 }
 
 // close modal
 function closeModal() {
   modal.style.display = 'none';
+
+  topNavMenu.classList.remove("animate__animated", "animate__lightSpeedOutLeft", "animate__slow");
+  topNavMenu.style.visibility = 'visible';
 }
 
 // Close If Outside Click
 function outsideClick(window) {
   if (window.target == modal) {
     modal.style.display = 'none';
+
+    topNavMenu.classList.remove("animate__animated", "animate__lightSpeedOutLeft", "animate__slow");
+    topNavMenu.style.visibility = 'visible';
   }
 }
 
@@ -27,16 +37,13 @@ closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
 
-
-
-
-//sideBox and secondCard animations
 const sideMenu = document.querySelector(".sideBox");
 const aboutMe = document.querySelector(".secondCard");
 const caption = document.querySelector(".bioCaption");
 const bioImg = document.querySelector(".thirdCard");
 const footerArea = document.querySelector(".footerArea");
 
+//hiding modal contents on page load
 aboutMe.style.display = "none";
 caption.style.display = "none";
 bioImg.style.display = "none";
