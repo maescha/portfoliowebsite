@@ -136,6 +136,23 @@ nav li a:hover {
     margin-left: 40%;
 }
 
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  text-decoration: underline;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.button:hover {
+  background-color: #F6B444;
+}
+
 .modal {
   display: none;
   overflow: auto;
