@@ -1,21 +1,3 @@
-//reveal function taken from https://alvarotrigo.com/blog/css-animations-scroll/
-// function reveal() {
-//     var reveals = document.querySelectorAll(".reveal");
-//     for (var i = 0; i < reveals.length; i++) {
-//       var windowHeight = window.innerHeight;
-//       var elementTop = reveals[i].getBoundingClientRect().top;
-//       var elementVisible = 150;
-//       if (elementTop < windowHeight - elementVisible) {
-//         reveals[i].classList.add("active");
-//       } else {
-//         reveals[i].classList.remove("active");
-//       }
-//     }
-//   }
-
-// window.addEventListener("scroll", reveal);
-
-
 //followed Brad Traversy's tutorial on modal creation here: https://www.youtube.com/watch?v=6ophW7Ask_0
 //modal animations
 const modal = document.querySelector('#aboutme');
