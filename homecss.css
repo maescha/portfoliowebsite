@@ -10,20 +10,19 @@ body {
     margin: 0px;
 }
 
-.reveal {
+/* .reveal {
     position: relative;
     opacity: 0;
 }
 
 .reveal.active {
     opacity: 1;
-}
+} */
 
 .topcard div {
     height: 100%;
     width: 100%;
     background-color: black;
-    position: absolute;
     z-index: -1;
 }
 
@@ -139,28 +138,32 @@ nav li a:hover {
     margin-left: 40%;
 }
 
-/* .midPage {
+.modal {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 
-} */
+}
 
-#circle {
-  color: #ddd5c0;
-  font-size: 350px;
-  position: absolute;
-  margin-top: -540px;
-  margin-left: -100px;
-  opacity: 0.2;
+.modalContent {
+  width: 100%;
+  background-color: #d5ccc4;
 }
 
 .sideBox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 5%;
-    position: relative;
+
 }
 
 .sideWindow {
     border: 1px solid #a8b5d7;
+    background-color: white;
 }
 
 .mockButtons {
@@ -228,21 +231,23 @@ nav li a:hover {
 .secondCard {
     background-color: white;
     width: 650px;
-    top: -500px;
-    left: 250px;
-    z-index: 5;
     border: 1px solid #a8b5d7;
+    margin-top: -400px;
+    margin-left: 300px;
+    z-index: 1;
+    position: absolute;
 }
 
 .secondText {
     border: 1px solid #a8b5d7;
     padding: 15px;
+    z-index: 1;
 }
 
 .bioCaption {
     display: block;
-    margin-top: -1050px;
-    margin-left: 750px;
+    margin-top: -750px;
+    margin-left: 550px;
     text-align: right;
     width: 644px; /* this needs to be changed to whatever width the actual image used is*/
 }
@@ -257,7 +262,7 @@ nav li a:hover {
 
 .thirdCard {
     background-color: #ccd5cc;
-    margin-left: 750px;
+    margin-left: 650px;
 }
 
 .footerArea {

@@ -34,7 +34,7 @@
                             <li><a href="writ.html">writing</a></li>
                             <li><a href="pro.html">programming</a></li>
                             <li><a href="#">blog</a></li>
-                            <li><a href="#">about me</a></li>
+                            <button class="aboutMe-modal" id="modal-btn">about me</button>
                             <li><a href="#">contact</a></li>
                         </ul>
                     </div>
@@ -47,11 +47,17 @@
     <p class="two" id="two">FOLIO.</p>
     </b>
     </div>
-    <span id="circle"><strong>○</strong></span>
 
     </div>
 
-<div class="midPage">
+<div id="aboutme" class="modal">
+  <div class="modalContent">
+
+    <div class="modal-header">
+      <span class="closeModal">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+
   <div class="sideBox reveal">
       <div class="sideWindow">
           <div class="mockButtons">
@@ -73,12 +79,12 @@
 
       <img src="assets/5.png" id="starImg">
       <div class="midColumnText anim-typewriter">
-          <p class="typewrite" data-period="2000" data-type='[ "I love to program", "I love to write", "I am creative", "I am ambitious", "I am Josephine Su" ]'>
+          <p class="typewrite" data-period="2000" data-type='[ "I love <br>to program", "I love <br>to write", "I am <br>creative",
+            "I am <br>ambitious", "I am <br>Josephine Su" ]'>
               <span class="wrap"></span>
           </p>
       </div>
   </div>
-</div>
 
 <div class="secondCard reveal" id="about-me">
     <div class="mockButtons">
@@ -102,6 +108,9 @@
     <div class="bioImage">
         <img src="assets/placeholderPuppy.png">
     </div>
+</div>
+
+</div>
 </div>
 
 </main>

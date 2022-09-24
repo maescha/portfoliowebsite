@@ -1,19 +1,52 @@
 //reveal function taken from https://alvarotrigo.com/blog/css-animations-scroll/
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
+// function reveal() {
+//     var reveals = document.querySelectorAll(".reveal");
+//     for (var i = 0; i < reveals.length; i++) {
+//       var windowHeight = window.innerHeight;
+//       var elementTop = reveals[i].getBoundingClientRect().top;
+//       var elementVisible = 150;
+//       if (elementTop < windowHeight - elementVisible) {
+//         reveals[i].classList.add("active");
+//       } else {
+//         reveals[i].classList.remove("active");
+//       }
+//     }
+//   }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
+
+
+//followed Brad Traversy's tutorial on modal creation here: https://www.youtube.com/watch?v=6ophW7Ask_0
+//modal animations
+const modal = document.querySelector('#aboutme');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.closeModal');
+
+// open modal
+function openModal() {
+  modal.style.display = 'initial';
+}
+
+// close modal
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(window) {
+  if (window.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+
+
+
 
 //sideBox and secondCard animations
 const sideMenu = document.querySelector(".sideBox");
@@ -27,14 +60,14 @@ caption.style.display = "none";
 bioImg.style.display = "none";
 footerArea.style.display = "none";
 
-//will allow windows to load in one after another
+//will allow modal windows to load in one after another
 const delayedAnimation = (className, delay, shouldDisplayBlock) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const elem = document.querySelector(className);
 
       if (shouldDisplayBlock) {
-        elem.style.display = "block";
+        elem.style.display = "inherit";
       }
 
       elem.classList.add("animate__animated", "animate__fadeInDown", "animate__slow");
@@ -43,13 +76,11 @@ const delayedAnimation = (className, delay, shouldDisplayBlock) => {
   });
 };
 
-window.addEventListener("scroll", () => {
-  delayedAnimation(".sideBox", 0, false)
-  .then(() => delayedAnimation(".secondCard", 1000, true))
-  .then(() => delayedAnimation(".bioCaption", 1000, true))
-  .then(() => delayedAnimation(".thirdCard", 1000, true))
-  .then(() => delayedAnimation(".footerArea", 1000, true));
-});
+delayedAnimation(".sideBox", 0, false)
+.then(() => delayedAnimation(".secondCard", 1000, true))
+.then(() => delayedAnimation(".bioCaption", 1000, true))
+.then(() => delayedAnimation(".thirdCard", 1000, true))
+.then(() => delayedAnimation(".footerArea", 1000, true));
 
 //sideBox middleColumn Textwriting animations
 // code from https://css-tricks.com/snippets/css/typewriter-effect/
