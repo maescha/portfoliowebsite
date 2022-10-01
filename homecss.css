@@ -127,12 +127,12 @@
 
   #one {
       margin-top: 10%;
-      margin-left: 10%;
+      margin-left: 25%;
   }
 
   #two {
-      margin-top: -50%;
-      margin-left: 40%;
+      margin-top: -47%;
+      margin-left: 75%;
   }
 
   button {
@@ -157,11 +157,10 @@
     display: none;
     overflow: auto;
     position: fixed;
-    left: 10%;
-    top: 10%;
+    left: 5%;
+    top: 5%;
     height: 100%;
     z-index: 100;
-
   }
 
   .modalContent {
