@@ -1,25 +1,27 @@
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
+/* MIN WIDTH 900PX */
 
-.header__menu {
-  display: none;
-}
-
-@media screen and (max-width: 550px) {
-  .header__logo {
-      height: 48px;
-      /* margin-right: 0.5em; */
+@media screen and (min-width: 900px) {
+  .content {
+    position: absolute;
+    top: 39%;
+    background: #ccd5cc;
+    margin: -40px 160px;
+    z-index: 1;
+    left: 20%;
+    opacity: 0.86;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .header__title {
-      margin-left: 0;
-      font-size: 2em;
-      vertical-align: bottom;
-  }
+
+
+
 }
 
-@media screen and (min-width: 700 px) {
+
+/* MIN WIDTH 700PX */
+
+@media screen and (min-width: 700px) {
   .hero {
       order: 0;
       width: 60%;
@@ -30,12 +32,13 @@
   }
 }
 
-@media screen and (min-width: 900px) {
-  .topCard,
-  .header__inner,
+
+/* MIN WIDTH 550PX */
+
+@media screen and (max-width: 550px) {
   .content {
-      width: 850px;
-      margin-left: auto;
-      margin-right: auto;
+    background: #ccd5cc;
+
   }
+
 }

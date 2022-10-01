@@ -1,330 +1,330 @@
-/* @media screen and (min-width: 550 px) {}
+/* FOR DESKTOP SCREENS - MIN WIDTH 1024*/
+@media screen and (min-width:1024px) {
 
-@media screen and (min-width: 700 px) {}
+  body {
+      font-family: Roboto;
+      color: #424242;
+      margin: 0px;
+  }
 
-@media screen and (min-width: 900 px) {} */
-
-body {
-    font-family: Roboto;
-    color: #424242;
-    margin: 0px;
-}
-
-.topcard {
-  position: relative;
-  z-index: -1;
-}
-
-.topcard div {
-    height: 100%;
-    width: 100%;
-    background-color: black;
+  .topcard {
+    position: relative;
     z-index: -1;
-}
+  }
 
-.content {
-    position: absolute;
-    top: 39%;
-    background: #ccd5cc;
-    margin: -40px 160px;
-    z-index: 1;
-    left: 20%;
-    opacity: 0.86;
-    z-index: 1;
+  .topcard div {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      z-index: -1;
+  }
 
-}
+  .content {
+      position: absolute;
+      top: 39%;
+      background: #ccd5cc;
+      margin: -40px 160px;
+      z-index: 1;
+      left: 20%;
+      opacity: 0.86;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
 
-.headertext {
-    width: 85%;
-    margin-left: 3.5em;
-}
+  }
 
-.header_title {
-    font-size: 1.55em;
-    margin: 5px;
-    color: #495159;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-}
+  .headertext {
+      width: 85%;
+      margin-left: 3.5em;
+  }
 
-main span {
-    font-weight: 40;
-    margin-left: 0.05em;
-    color: #495159;
-    text-transform: uppercase;
-}
+  .header_title {
+      font-size: 1.55em;
+      margin: 5px;
+      color: #495159;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+  }
 
-.small {
-    font-weight: 70;
-    float: left;
-    margin-right: 0.5em;
-}
+  main span {
+      font-weight: 40;
+      margin-left: 0.05em;
+      color: #495159;
+      text-transform: uppercase;
+  }
 
-.inside {
-    background-color: white;
-    width: 100%;
-}
+  .small {
+      font-weight: 70;
+      float: left;
+      margin-right: 0.5em;
+  }
 
-nav {
-    width: 100%;
-    overflow: auto;
-    top: 0;
-    left: 0;
+  .inside {
+      background-color: white;
+      width: 100%;
+  }
 
-}
+  nav {
+      width: 100%;
+      overflow: auto;
+      top: 0;
+      left: 0;
 
-.verticalline {
-    border-left: 2px solid #495159;
-    margin: 5px;
-}
+  }
 
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    margin: 5px;
-    padding: 5px;
-    overflow: hidden;
+  .verticalline {
+      border-left: 2px solid #495159;
+      margin: 5px;
+  }
+
+  nav ul {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 5px;
+      padding: 5px;
+      overflow: hidden;
+      font-size: 1.05em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-right: 1em;
+  }
+
+  nav li {
+      display: block;
+  }
+
+  nav li a:hover {
+      background-color: #F6B444;
+  }
+
+  .rightbuttons {
+      font-size: 10px;
+      float: left;
+      margin-right: 1px;
+      background-color: #ffffff;
+      color: #888888;
+      width: 20px;
+      text-align: center;
+      height: 16px;
+  }
+
+  .bgtext {
+      display: block;
+      z-index: -1;
+
+      background-image: url("assets/gridTileBg.png");
+      background-repeat: repeat;
+      background-clip: border-box;
+      background-origin: border-box;
+      position: fixed;
+  }
+
+  .bgtext p {
+      font-size: 300px;
+      color: #aabad8;
+      letter-spacing: -10px;
+  }
+
+  #one {
+      margin-top: 10%;
+      margin-left: 10%;
+  }
+
+  #two {
+      margin-top: -50%;
+      margin-left: 40%;
+  }
+
+  button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    text-decoration: underline;
+    cursor: pointer;
+
+    font-family: Roboto;
     font-size: 1.05em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-right: 1em;
-}
+    color: blue;
+  }
 
-nav li {
-    display: block;
-}
-
-nav li a:hover {
+  .button:hover {
     background-color: #F6B444;
-}
+  }
 
-.rightbuttons {
-    font-size: 10px;
-    float: left;
-    margin-right: 1px;
-    background-color: #ffffff;
-    color: #888888;
-    width: 20px;
-    text-align: center;
-    height: 16px;
-}
-
-.bgtext {
-    display: block;
-    z-index: -1;
-
-    background-image: url("assets/gridTileBg.png");
-    background-repeat: repeat;
-    background-clip: border-box;
-    background-origin: border-box;
+  .modal {
+    display: none;
+    overflow: auto;
     position: fixed;
+    left: 10%;
+    top: 10%;
+    height: 100%;
+    z-index: 100;
 
-}
+  }
 
-.bgtext p {
-    font-size: 300px;
-    color: #aabad8;
-    letter-spacing: -10px;
-}
-
-#one {
-    margin-top: 10%;
-    margin-left: 10%;
-}
-
-#two {
-    margin-top: -50%;
-    margin-left: 40%;
-}
-
-button {
-  background: none!important;
-  border: none;
-  padding: 0!important;
-  text-decoration: underline;
-  cursor: pointer;
-
-  font-family: Roboto;
-  font-size: 1.05em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: blue;
-}
-
-.button:hover {
-  background-color: #F6B444;
-}
-
-.modal {
-  display: none;
-  overflow: auto;
-  position: fixed;
-  left: 10%;
-  top: 10%;
-  height: 100%;
-  z-index: 100;
-
-}
-
-.modalContent {
-  width: 100%;
-}
-
-.closeModal {
-  color: #b3e181;
-  float: left;
-  font-size: 30px;
-}
-
-.closeModal:hover,
-.closeModal:focus {
-  color: #6f8c50;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.aboutme {
-  width:596px;
-  height:896px;
-}
-
-.sideBox {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 5%;
-
-}
-
-.sideWindow {
-    border: 1px solid #a8b5d7;
-    background-color: white;
-}
-
-.mockButtons {
-    background-color: #a8bad7;
-    display: block;
-    border: 1px solid #a8b5d7;
-}
-
-.insideSideBox {
-    border: 1px solid #a8b5d7;
-}
-
-#whiteImg {
-    width: 50px;
-    height: 550px;
-}
-
-.leftSideMockButtons {
-    display: inline;
-    color: white;
-}
-
-.scrollSideBox {
-    display: inline;
-}
-
-.bottomSideBox {
-    display: inline;
-    color: #a8bad7;
-    border-top: 1px solid #a8bad7;
-}
-
-#leftArrow {
-    float: left;
-    border: 1px solid #a8b5d7;
-}
-
-#scrollBar {
-    letter-spacing: -1px;
-    margin: 5px;
-    box-sizing: border-box;
-
-}
-
-#rightArrow {
-    float: right;
-    border: 1px solid #a8b5d7;
-}
-
-#starImg {
-    display: block;
-    margin-left: -100%;
-    margin-top: 3%;
-}
-
-.midColumnText {
-    display: inline;
-    text-transform: uppercase;
-    margin-left: -180%;
-    margin-top: 15%;
-    font-family: "Special Elite";
-    font-size: 36px;
-}
-
-.secondCard {
-    background-color: white;
-    width: 650px;
-    border: 1px solid #a8b5d7;
-    margin-top: -400px;
-    margin-left: 300px;
-    z-index: 1;
-    position: absolute;
-}
-
-.secondText {
-    border: 1px solid #a8b5d7;
-    padding: 15px;
-    z-index: 1;
-}
-
-.caption {
-  left: 1200px;
-  width: 100%;
-  position: fixed;
-  font-size: 50px;
-  z-index: 10;
-}
-
-.space {
-    display: block;
-    margin-top: -690px;
-    margin-left: 550px;
-    text-align: right;
-    width: 644px; /* this needs to be changed to whatever width the actual image used is*/
-}
-
-.bioImage img{
-  width: 700px; /* this needs to be changed to whatever width the actual image used is*/
-  height: 640px; /* this needs to be changed to whatever HEIGHT the actual image used is*/
-
-  /* ABOVE HEIGHT AND WEIGHT WILL INFLUENCE WHETHER OR NOT THE PAGE WILL OVERFLOW VERTICALLY OR HORIZONTALLY */
-
-}
-
-.thirdCard {
-  background-color: #ccd5cc;
-  margin-left: 750px;
-}
-
-footer {
-  font-family: Roboto;
-  font-size: 10px;
-  line-height: 1px;
-  margin-top: 15px;
-  text-transform: uppercase;
-  color:#384559
-}
-
-.footerArea {
-    background-color: #dbd3be;
-    position: fixed;
-    bottom: 0;
+  .modalContent {
     width: 100%;
-}
+  }
 
-.textContainer {
-    grid-template-columns: repeat(3, 1fr);
-    display: grid;
-    padding-left: 55px;
-    overflow-wrap: break-word;}
+  .closeModal {
+    color: #b3e181;
+    float: left;
+    font-size: 30px;
+  }
+
+  .closeModal:hover,
+  .closeModal:focus {
+    color: #6f8c50;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .aboutme {
+    width:596px;
+    height:896px;
+  }
+
+  .sideBox {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 5%;
+
+  }
+
+  .sideWindow {
+      border: 1px solid #a8b5d7;
+      background-color: white;
+  }
+
+  .mockButtons {
+      background-color: #a8bad7;
+      display: block;
+      border: 1px solid #a8b5d7;
+  }
+
+  .insideSideBox {
+      border: 1px solid #a8b5d7;
+  }
+
+  #whiteImg {
+      width: 50px;
+      height: 550px;
+  }
+
+  .leftSideMockButtons {
+      display: inline;
+      color: white;
+  }
+
+  .scrollSideBox {
+      display: inline;
+  }
+
+  .bottomSideBox {
+      display: inline;
+      color: #a8bad7;
+      border-top: 1px solid #a8bad7;
+  }
+
+  #leftArrow {
+      float: left;
+      border: 1px solid #a8b5d7;
+  }
+
+  #scrollBar {
+      letter-spacing: -1px;
+      margin: 5px;
+      box-sizing: border-box;
+
+  }
+
+  #rightArrow {
+      float: right;
+      border: 1px solid #a8b5d7;
+  }
+
+  #starImg {
+      display: block;
+      margin-left: -100%;
+      margin-top: 3%;
+  }
+
+  .midColumnText {
+      display: inline;
+      text-transform: uppercase;
+      margin-left: -180%;
+      margin-top: 15%;
+      font-family: "Special Elite";
+      font-size: 36px;
+  }
+
+  .secondCard {
+      background-color: white;
+      width: 650px;
+      border: 1px solid #a8b5d7;
+      margin-top: -400px;
+      margin-left: 300px;
+      z-index: 1;
+      position: absolute;
+  }
+
+  .secondText {
+      border: 1px solid #a8b5d7;
+      padding: 15px;
+      z-index: 1;
+  }
+
+  .caption {
+    left: 1200px;
+    width: 100%;
+    position: fixed;
+    font-size: 50px;
+    z-index: 10;
+  }
+
+  .space {
+      display: block;
+      margin-top: -690px;
+      margin-left: 550px;
+      text-align: right;
+      width: 644px; /* this needs to be changed to whatever width the actual image used is*/
+  }
+
+  .bioImage img{
+    width: 700px; /* this needs to be changed to whatever width the actual image used is*/
+    height: 640px; /* this needs to be changed to whatever HEIGHT the actual image used is*/
+
+    /* ABOVE HEIGHT AND WEIGHT WILL INFLUENCE WHETHER OR NOT THE PAGE WILL OVERFLOW VERTICALLY OR HORIZONTALLY */
+
+  }
+
+  .thirdCard {
+    background-color: #ccd5cc;
+    margin-left: 750px;
+  }
+
+  footer {
+    font-family: Roboto;
+    font-size: 10px;
+    line-height: 1px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color:#384559
+  }
+
+  .footerArea {
+      background-color: #dbd3be;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+
+  .textContainer {
+      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      padding-left: 55px;
+      overflow-wrap: break-word;}
+
+}
