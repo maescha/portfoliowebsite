@@ -26,7 +26,7 @@ body {
 
 .content {
   position: absolute;
-  top: 30%;
+  top: 40%;
   background: #ccd5cc;
   z-index: 1;
   opacity: 0.86;
@@ -106,7 +106,7 @@ letter-spacing: -10px;
 }
 
 #one {
-margin-top: 5%;
+margin-top: 15%;
 margin-bottom: 0;
 }
 
@@ -146,6 +146,7 @@ width: 100%;
 color: #b3e181;
 float: left;
 font-size: 30px;
+margin-top: -130px;
 }
 
 .closeModal:hover,
@@ -156,7 +157,7 @@ cursor: pointer;
 }
 
 .sideBox {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .sideWindow, .insideSideBox,
@@ -180,7 +181,7 @@ color: white;
   background-color: white;
   width: 450px;
   border: 1px solid #a8b5d7;
-  margin-left: 200px;
+  margin-left: 150px;
   z-index: 1;
   position: absolute;
 }

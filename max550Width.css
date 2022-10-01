@@ -25,16 +25,14 @@ body {
 }
 
 .content {
-  position: absolute;
-  top: 30%;
   background: #ccd5cc;
   opacity: 0.86;
   z-index: 1;
+  display: flow-root;
 }
 
 .headertext {
   width: 100%;
-  margin-right: 50px;
 }
 
 .header_title {
@@ -96,22 +94,31 @@ display: none;
 
 .bgtext {
 background-image: url("assets/gridTileBg.png");
+background-size: 100% auto;
+-webkit-background-size: 100% auto;
+-moz-background-size: 100% auto;
+-o-background-size: 100% auto;
 }
 
 .bgtext p {
-font-size: 250px;
+font-size: 190px;
 color: #aabad8;
-letter-spacing: -10px;
+letter-spacing: -5px;
 }
 
 #one {
-margin-top: 5%;
-margin-bottom: 0;
+  margin-top: -28%;
+  margin-bottom: 0;
+  margin-left: 320px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 #two {
-margin-top: -15%;
+margin-top: -65%;
 margin-bottom: 0;
+writing-mode: vertical-rl;
+text-orientation: mixed;
 }
 
 button {

@@ -26,8 +26,6 @@ MAX WIDTH 900 PX
     position: absolute;
     top: 39%;
     background: #ccd5cc;
-    margin: -40px 160px;
-    z-index: 1;
     left: 20%;
     opacity: 0.86;
     z-index: 1;
@@ -36,7 +34,7 @@ MAX WIDTH 900 PX
   }
 
   .headertext {
-    width: 85%;
+    width: 90%;
   }
 
   .header_title {
@@ -118,7 +116,7 @@ MAX WIDTH 900 PX
   }
 
   #one {
-  margin-top: -1%;
+  margin-top: 10%;
   margin-bottom: 0;
   }
 
@@ -143,11 +141,10 @@ MAX WIDTH 900 PX
 
   .modal {
   display: none;
-  overflow: auto;
   position: fixed;
   left: 5%;
-  top: 5%;
-  height: 100%;
+  top: 25%;
+  height: 500px;
   z-index: 100;
   }
 
@@ -159,6 +156,7 @@ MAX WIDTH 900 PX
   color: #b3e181;
   float: left;
   font-size: 30px;
+  margin-top: -160px;
   }
 
   .closeModal:hover,
@@ -168,14 +166,9 @@ MAX WIDTH 900 PX
   cursor: pointer;
   }
 
-  #aboutme {
-    overflow: hidden;
-  }
-
   .sideBox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 5%;
     margin-bottom: 0;
 
   }
