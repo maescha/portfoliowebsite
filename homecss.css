@@ -148,6 +148,7 @@ button {
   font-size: 1.05em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: blue;
 }
 
 .button:hover {
@@ -158,8 +159,8 @@ button {
   display: none;
   overflow: auto;
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 10%;
+  top: 10%;
   height: 100%;
   z-index: 100;
 
@@ -277,20 +278,20 @@ button {
     z-index: 1;
 }
 
+.caption {
+  left: 1200px;
+  width: 100%;
+  position: fixed;
+  font-size: 50px;
+  z-index: 10;
+}
+
 .space {
     display: block;
     margin-top: -690px;
     margin-left: 550px;
     text-align: right;
     width: 644px; /* this needs to be changed to whatever width the actual image used is*/
-}
-
-.caption {
-  left: 1200px;
-  width: 100%;
-  bottom: 35px;
-  position: fixed;
-  font-size: 50px;
 }
 
 .bioImage img{
