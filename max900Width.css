@@ -112,7 +112,7 @@ MAX WIDTH 900 PX
   }
 
   .bgtext p {
-  font-size: 300px;
+  font-size: 250px;
   color: #aabad8;
   letter-spacing: -10px;
   }
@@ -166,6 +166,10 @@ MAX WIDTH 900 PX
   color: #6f8c50;
   text-decoration: none;
   cursor: pointer;
+  }
+
+  #aboutme {
+    overflow: hidden;
   }
 
   .sideBox {
