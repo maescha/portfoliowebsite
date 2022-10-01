@@ -20,7 +20,7 @@ body {
 
 .content {
     position: absolute;
-    top: 45%;
+    top: 40%;
     background: #ccd5cc;
     margin: -40px 160px;
     z-index: 1;
